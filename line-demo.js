@@ -2,6 +2,7 @@ var dom = document.getElementById('clock'),
     ctx = dom.getContext('2d');
 
     //坐标位置默认基于 浏览器窗口(0,0),此时居中，基于 当前坐标系
+    //x轴 向右，y轴向下
     ctx.beginPath();
     ctx.moveTo(100,350); //只是将坐标移到某点
     ctx.lineTo(500,350); //将两个点之间连接起来
