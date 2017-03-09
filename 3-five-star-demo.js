@@ -8,10 +8,13 @@ var dom = document.getElementById('clock'),
 //ctx.lineJoin='miter'; //round 圆角  bevel 斜角 miter尖角
 //ctx.miterLimit=150;//默认10 只有当 lineJoin=miter，当超过这个度数，会变成bevel，只有显示十分尖锐的角，才会修改
 
-ctx.fillStyle = 'black';
+var skyStyle=ctx.createLinearGradient(0,0,0,ctx.canvas.height);
+skyStyle.addColorStop(0.0,'black');
+skyStyle.addColorStop(1.0,'#035');
+
+ctx.fillStyle =skyStyle; //填充天边渐变色
 ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 ctx.fill();
-
 
 /**
  *
