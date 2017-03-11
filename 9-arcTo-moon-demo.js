@@ -90,9 +90,10 @@ function pathMoon(ctx,d){
     ctx.beginPath();
     ctx.arc(0,0,1,0.5*Math.PI,1.5*Math.PI,true);
     ctx.moveTo(0,-1);//半径为1，从y轴 最上方定点开始绘制
-    var disAC=distance(0,-1,d,0),
+   var disAC=distance(0,-1,d,0),
         innerRadius=disAC/d;
     ctx.arcTo(d,0,0,1,innerRadius);
+    //ctx.quadraticCurveTo(1.2,0,0,1); //直接画圆弧
     ctx.closePath();
 }
 
