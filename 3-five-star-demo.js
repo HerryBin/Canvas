@@ -1,5 +1,6 @@
 /**
  * Created by xianrongbin on 2017/3/8.
+ * 本例子使用渐变画出  璀璨星空
  */
 var dom = document.getElementById('clock'),
     ctx = dom.getContext('2d'),
