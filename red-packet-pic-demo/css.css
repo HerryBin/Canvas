@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#blur-div {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#showImg {
+    display: block;
+    margin: 0 auto;
+
+    filter: blur(5px);
+    -ms-filter: blur(5px);
+    -webikit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    z-index:0;
+
+    /*      filter：blur（5）模糊
+            filter：grayscale（5）灰度
+            filter：sepia（5）黄棕色
+            filter：saturate（5）饱和度
+            filter：hue-rotate（50deg）色相
+            filter：invert（1）反色
+            filter：opacity（0.2）不透明度
+            filter：brightness（0.2）明度
+            filter：contrast（2）对比度
+            filter：drop-shadow（10px 10px 2px #aaa）阴影
+
+            */
+}
+
+#canvas {
+    display: block;
+    margin: 0 auto;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    z-index: 100;
+}
+
+.button{
+    display: block;
+    position: absolute;
+    z-index: 200;
+
+    width: 130px;
+    height: 30px;
+
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+
+    border-radius: 3px;
+}
+
+#reset-btn{
+    right: 180px;
+    bottom: 20px;
+    background-color: #085;
+}
+
+#reset-btn:hover{
+    background-color: #047;
+}
+
+#show-btn{
+    right: 50px;
+    bottom: 20px;
+    background-color: #085;
+}
+#show-btn:hover{
+    background-color: #047;
+}
+
