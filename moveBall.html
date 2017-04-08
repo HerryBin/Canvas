@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #controller a{
+            text-decoration: none;
+        }
+        #controller #white-color-btn{
+            background-color: white;
+        }
+
+        #controller #black-color-btn{
+            background-color: black;
+        }
+        #moveBallDiv{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="canvas-wrapper">
+    <div id="moveBallDiv">
+        <canvas id="moveBall" height="800px" width="800px"></canvas>
+    </div>
+    <div id="controller">
+        <a href="#" id="canvas-btn">停止运动</a>
+        <a href="#" class="color-btn" id="white-color-btn">&nbsp;</a>
+        <a href="#" class="color-btn" id="black-color-btn">&nbsp;</a>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="moveBall.js"></script>
+</html>
